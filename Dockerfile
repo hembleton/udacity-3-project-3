@@ -16,7 +16,7 @@ COPY ./analytics/ /app
 # RUN pip install -r /app/requirements.txt
 RUN pip install --upgrade pip && pip install -r requirements.txt && pip install --upgrade Flask Werkzeug
 
-# Make port 5153 available to the world outside this container
+# Make port 5153 available
 EXPOSE 5153
 
 CMD ["python", "app.py"]
